@@ -1,6 +1,5 @@
 import random
-yourCount = 0
-computerCount = 0
+yourCount, computerCount = 0, 0
 while True:
     userin = input("Rock, paper or scissors? ").upper()
     randNum = random.randint(0,2)   #to generate computer's play
@@ -17,7 +16,7 @@ while True:
     else:
         print("Please enter a valid input. END to stop the game.")
         continue
-    #3 cases exist:
+    #3 cases exist given that input is valid:
     if (uservalue - randNum) == 1 or (uservalue - randNum) == -2:
         print("Computer played " + myList[randNum] + ", YOU WIN!")
         yourCount += 1
