@@ -1,5 +1,6 @@
 import random
 yourCount, computerCount = 0, 0
+print("ROCK PAPER SCISSORS!")
 while True:
     userin = input("Rock, paper or scissors? ").upper()
     randNum = random.randint(0,2)   #to generate computer's play
